@@ -52,7 +52,7 @@ function App() {
           <div className="form-grup">
             <h1>Busca de Cidades</h1>
             <h3 className="sub-titulo">Digite o CEP no campo abaixo.</h3>          
-            <Field name="cep" type="text" onBlur={(ev) => onBlurCep(ev, setFieldValue)} className="dados" placeholder="Digite o seu CPF" />
+            <Field name="cep" type="text" onBlur={(ev) => onBlurCep(ev, setFieldValue)} className="dados" placeholder="Digite o seu CEP" />
             <h3>Não sabe o seu CEP ? <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Pesquise aqui</a></h3>
             <Field name="cidade" type="text" className="dados cidade" placeholder="Cidade" disabled />
           </div>         
@@ -62,4 +62,3 @@ function App() {
   )
 }  
 export default App;
-
