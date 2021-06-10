@@ -2,7 +2,11 @@ import React from 'react';
 import './App.css';
 import { Formik, Field, Form } from 'formik';
 
-export default () => {
+//const cors = require("cors");
+
+//App.use(cors());
+
+function App() {
 
   function onSubmit(values, actions) {
     console.log('SUBMIT', values);
@@ -55,5 +59,7 @@ export default () => {
         </Form>
       )}
     />
-  )}  
+  )
+}  
+export default App;
 
